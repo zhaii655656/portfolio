@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>电商视觉作品集 | 主图 · SKU · 详情页</title>
+  <meta name="description" content="电商视觉设计作品集，收录主图、SKU 与详情页设计。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="cursor-light" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-mark">YI</span>
+      <span class="brand-text">VISUAL DESIGN</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#works">作品</a>
+      <a href="#profile">能力</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="icon-button menu-button" type="button" aria-label="打开菜单" title="菜单">
+      <i data-lucide="menu"></i>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-visual" aria-hidden="true">
+        <figure class="hero-image hero-image-a"><img src="assets/works/1063596496638/main-01.jpg" alt="" fetchpriority="high"></figure>
+        <figure class="hero-image hero-image-b"><img src="assets/works/1012045536026/main-01.jpg" alt="" fetchpriority="high"></figure>
+        <figure class="hero-image hero-image-c"><img src="assets/works/1004772810930/main-01.jpg" alt="" fetchpriority="high"></figure>
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> E-COMMERCE VISUAL / 2026</div>
+        <h1 id="hero-title">电商视觉<br><em>作品集</em></h1>
+        <p>从点击第一眼到成交最后一步。专注主图视觉、SKU 体系与详情页叙事，让设计既有审美，也为转化服务。</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#works">浏览作品 <i data-lucide="arrow-down-right"></i></a>
+          <button class="text-button open-upload" type="button">添加新作品 <i data-lucide="plus"></i></button>
+        </div>
+      </div>
+      <div class="hero-meta" aria-label="作品集数据">
+        <div><strong id="project-count">13</strong><span>组项目</span></div>
+        <div><strong>03</strong><span>视觉模块</span></div>
+        <div><strong>02</strong><span>核心品类</span></div>
+      </div>
+      <a class="scroll-cue" href="#works" aria-label="向下浏览作品">
+        <span>SCROLL</span><i data-lucide="arrow-down"></i>
+      </a>
+    </section>
+
+    <section class="works-section" id="works" aria-labelledby="works-title">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-index">01 / SELECTED WORK</span>
+          <h2 id="works-title">精选项目</h2>
+        </div>
+        <p>覆盖家居收纳与汽车用品，从产品表现、信息层级到完整购买路径的视觉搭建。</p>
+      </div>
+
+      <div class="work-toolbar reveal">
+        <div class="filter-group" role="group" aria-label="项目分类">
+          <button class="filter-button active" type="button" data-filter="all">全部</button>
+          <button class="filter-button" type="button" data-filter="home">家居收纳</button>
+          <button class="filter-button" type="button" data-filter="auto">汽车用品</button>
+          <button class="filter-button" type="button" data-filter="custom">新增作品</button>
+        </div>
+        <button class="add-button open-upload" type="button"><i data-lucide="plus"></i><span>添加作品</span></button>
+      </div>
+
+      <div class="work-grid" id="work-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <i data-lucide="images"></i>
+        <p>这里还没有新增作品</p>
+        <button class="primary-button open-upload" type="button">添加第一组</button>
+      </div>
+      <button class="load-more" id="load-more" type="button">加载更多作品 <i data-lucide="plus"></i></button>
+    </section>
+
+    <section class="profile-section" id="profile" aria-labelledby="profile-title">
+      <div class="profile-intro reveal">
+        <span class="section-index">02 / CAPABILITY</span>
+        <h2 id="profile-title">把商品卖点，<br>变成视觉记忆。</h2>
+      </div>
+      <div class="capability-list reveal">
+        <article>
+          <span>01</span>
+          <div><h3>主图创意</h3><p>构图策略 · 卖点提炼 · 场景氛围</p></div>
+          <i data-lucide="scan-search"></i>
+        </article>
+        <article>
+          <span>02</span>
+          <div><h3>SKU 系统</h3><p>系列一致性 · 信息规范 · 规格识别</p></div>
+          <i data-lucide="layout-grid"></i>
+        </article>
+        <article>
+          <span>03</span>
+          <div><h3>详情页设计</h3><p>内容策划 · 视觉节奏 · 转化路径</p></div>
+          <i data-lucide="panel-top"></i>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="reveal">HAVE A PROJECT IN MIND?</p>
+      <h2 class="reveal">让好产品，<br><span>被更多人看见。</span></h2>
+      <a class="contact-link reveal" href="mailto:hello@example.com">HELLO@EXAMPLE.COM <i data-lucide="arrow-up-right"></i></a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 YI VISUAL DESIGN</span>
+    <a href="#top">BACK TO TOP <i data-lucide="arrow-up"></i></a>
+  </footer>
+
+  <aside class="mobile-menu" aria-hidden="true">
+    <button class="icon-button close-menu" type="button" aria-label="关闭菜单"><i data-lucide="x"></i></button>
+    <a href="#works">作品</a><a href="#profile">能力</a><a href="#contact">联系</a>
+  </aside>
+
+  <dialog class="project-dialog" id="project-dialog">
+    <button class="dialog-close icon-button" type="button" aria-label="关闭项目" title="关闭"><i data-lucide="x"></i></button>
+    <div class="dialog-sidebar">
+      <span class="dialog-index" id="dialog-index">PROJECT 01</span>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-desc"></p>
+      <div class="dialog-tags" id="dialog-tags"></div>
+      <div class="gallery-tabs" id="gallery-tabs" role="tablist"></div>
+      <div class="dialog-progress"><span id="dialog-current">01</span><div><i id="progress-line"></i></div><span id="dialog-total">03</span></div>
+      <button class="delete-project" id="delete-project" type="button" hidden><i data-lucide="trash-2"></i>删除这组新增作品</button>
+    </div>
+    <div class="dialog-stage">
+      <button class="gallery-arrow gallery-prev" type="button" aria-label="上一张"><i data-lucide="arrow-left"></i></button>
+      <img id="dialog-image" src="" alt="">
+      <div class="dialog-collage" id="dialog-collage" hidden></div>
+      <button class="gallery-arrow gallery-next" type="button" aria-label="下一张"><i data-lucide="arrow-right"></i></button>
+      <p class="image-caption" id="image-caption"></p>
+    </div>
+  </dialog>
+
+  <dialog class="upload-dialog" id="upload-dialog">
+    <button class="dialog-close icon-button" type="button" aria-label="关闭添加作品"><i data-lucide="x"></i></button>
+    <div class="upload-heading">
+      <span class="section-index">NEW PROJECT</span>
+      <h2>添加新作品</h2>
+      <p>图片会保存在当前浏览器中，刷新页面后依然可见。</p>
+    </div>
+    <form id="upload-form">
+      <label>项目名称<input id="upload-title" name="title" type="text" placeholder="例如：新品收纳架视觉设计" required maxlength="32"></label>
+      <label>项目类型
+        <select id="upload-category" name="category">
+          <option value="home">家居收纳</option>
+          <option value="auto">汽车用品</option>
+          <option value="custom">其他品类</option>
+        </select>
+      </label>
+      <label class="full-field">项目简介<textarea id="upload-description" name="description" placeholder="简要描述设计策略或项目重点" maxlength="120"></textarea></label>
+      <label class="drop-zone full-field" id="drop-zone">
+        <input id="upload-files" type="file" accept="image/jpeg,image/png,image/webp" multiple required>
+        <i data-lucide="image-up"></i>
+        <strong>选择或拖入图片</strong>
+        <span>支持 JPG、PNG、WEBP，可多选</span>
+      </label>
+      <div class="upload-preview full-field" id="upload-preview"></div>
+      <button class="primary-button submit-upload full-field" type="submit">保存到作品集 <i data-lucide="check"></i></button>
+    </form>
+  </dialog>
+
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
